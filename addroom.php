@@ -7,7 +7,11 @@
    
    $name = $_POST['name'];
    
-   mysqli_query($con,"INSERT INTO room (room_name) VALUES (\"$name\")");
+   mysqli_query($con,"INSERT INTO room (room_name) VALUES ('$name')");
+   mysqli_query($con,"CREATE TABLE $name (device_id INT(3) NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+										  device_name VARCHAR(20) NOT NULL, 
+										  status INT(2) DEFAULT 0)");
+										 
    echo "Done";
       
    mysqli_close($con);
