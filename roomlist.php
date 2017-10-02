@@ -6,7 +6,7 @@
    }
 	
    $storeArray = Array();
-   $result = mysqli_query($con,"SELECT room_name FROM room");
+   $result = mysqli_query($con,"SELECT room_name FROM listofrooms");
    while($row = mysqli_fetch_array($result)){
 	   $storeArray[] =  $row['room_name'];
    }

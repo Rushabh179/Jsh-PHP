@@ -7,8 +7,8 @@
    
    $name = $_POST['name'];
    
-   mysqli_query($con,"DELETE FROM room WHERE room_name='$name'");
-   mysqli_query($con,"DROP TABLE $name");
+   mysqli_query($con,"DELETE FROM listofrooms WHERE room_name='$name'");
+   mysqli_query($con,"DROP TABLE room_$name");
    echo "Done";
       
    mysqli_close($con);
