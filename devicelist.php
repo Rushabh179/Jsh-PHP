@@ -8,13 +8,15 @@
    $name = $_POST['name'];
 	
    $storeArray = Array();
-   $result = mysqli_query($con,"SELECT device_name FROM room_$name");
+   $result = mysqli_query($con,"SELECT device_name FROM `room_$name`");
    while($row = mysqli_fetch_array($result)){
 	   $storeArray[] =  $row['device_name'];
    }
    
+   if($storeArray!=null){   
    for($i=0;$i<count($storeArray);$i++){
-	echo $storeArray[$i]."  ";   
+	echo $storeArray[$i]."^";   
+   }
    }
    
    mysqli_close($con);

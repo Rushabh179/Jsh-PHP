@@ -8,7 +8,7 @@
    $room_name = $_POST['room_name'];
    $device_name = $_POST['device_name'];
    
-   mysqli_query($con,"INSERT INTO room_$room_name (device_name) VALUES ('$device_name')");
+   mysqli_query($con,"INSERT INTO `room_$room_name` (device_name) VALUES ('$device_name')");
    
    echo "Done";
    

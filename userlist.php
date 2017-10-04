@@ -12,7 +12,7 @@
    }
    
    for($i=0;$i<count($storeArray);$i++){
-	echo $storeArray[$i]." ";   
+	echo $storeArray[$i]."^";   
    }
    
    mysqli_close($con);

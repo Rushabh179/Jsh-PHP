@@ -9,7 +9,7 @@
    $id = $_POST['id'];
    $password = $_POST['password'];
    
-   mysqli_query($con,"INSERT INTO login (name,id,password) VALUES (\"$name\",\"$id\",\"$password\")");
+   mysqli_query($con,"INSERT INTO login (name,id,password) VALUES ('$name','$id','$password')");
  
    echo "Done";
       

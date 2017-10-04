@@ -5,10 +5,9 @@
       echo "Failed to connect to MySQL: " . mysqli_connect_error();
    }
    
-   $name = $_POST['name'];
+   $id = $_POST['id'];
    
-   mysqli_query($con,"DELETE FROM listofrooms WHERE room_name='$name'");
-   mysqli_query($con,"DROP TABLE `room_$name`");
+   mysqli_query($con,"DELETE FROM login WHERE id='$id'");
    echo "Done";
       
    mysqli_close($con);
