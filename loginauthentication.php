@@ -12,7 +12,7 @@
    $row = mysqli_fetch_array($result);
    #$data = $row[0].$row[1];
    echo $row[0];
-   echo "^";
+   echo "  ";
    echo $row[1];
    
    mysqli_close($con);
